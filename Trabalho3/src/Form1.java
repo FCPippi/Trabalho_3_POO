@@ -65,7 +65,6 @@ public class Form1 {
                     csv_data.addRow(row);
 
                 }
-                System.out.println(records.get(1));
             }
 
         } catch (Exception e) {
