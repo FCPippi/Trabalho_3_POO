@@ -12,7 +12,7 @@ public class Appi extends JFrame {
         super();
         formDois = new Form2(this);
         this.setContentPane(formDois.getPainel());
-        this.setTitle("Varios paineis");
+        this.setTitle("Trabalho 3");
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.pack();
         this.setSize(800,200);
