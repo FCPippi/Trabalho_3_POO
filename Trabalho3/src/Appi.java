@@ -17,8 +17,5 @@ public class Appi extends JFrame {
         this.setVisible(true);
     }
 
-
-
-
 }
 
