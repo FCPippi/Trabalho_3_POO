@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Form1">
+  <grid id="27dc6" binding="painel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="4f617" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+        <constraints border-constraint="North"/>
+        <properties>
+          <text value=""/>
+          <toolTipText value=""/>
+        </properties>
+      </component>
+      <scrollpane id="af927" binding="jScrollPane2">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <horizontalScrollBarPolicy value="31"/>
+        </properties>
+        <border type="etched"/>
+        <children>
+          <component id="2380d" class="javax.swing.JTable" binding="jTable1">
+            <constraints/>
+            <properties>
+              <autoCreateRowSorter value="true"/>
+              <autoResizeMode value="4"/>
+            </properties>
+            <clientProperties>
+              <Table.isFileList class="java.lang.Boolean" value="false"/>
+            </clientProperties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="39c57" class="javax.swing.JButton" binding="voltarButton">
+        <constraints border-constraint="South"/>
+        <properties>
+          <text value="Volta para o menu"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
