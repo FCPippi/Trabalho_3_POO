@@ -1,4 +1,3 @@
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -16,21 +15,14 @@ public class DataSaveSorted {
     private List<TrabalhoDePesquisa> trabalhos = new ArrayList<>(3000);
 
 
-    public List<TrabalhoDePesquisa> sortByName() {
-
-        Comparator<TrabalhoDePesquisa> comparator = new Comparator<TrabalhoDePesquisa>() {
-            @Override
-            public int compare(TrabalhoDePesquisa o1, TrabalhoDePesquisa o2) {
-                return o1.compareTo(o2);
-            }
-        };
-        Collections.sort(this.trabalhos, comparator);
-        return this.trabalhos;
+    public void sortByName() {
+        Comparator<TrabalhoDePesquisa> comparator = TrabalhoDePesquisa::compareTo;
+        this.trabalhos.sort(comparator);
     }
 
-    public List<TrabalhoDePesquisa> carregaDadosArquivo(String dado) {
+    public void carregaDadosArquivo(String dado) {
         List<TrabalhoDePesquisa> trab = new ArrayList<>(3000);
-        String line = "";
+        String line;
         Path path = Paths.get(dado + ".csv");
         try (BufferedReader reader = Files.newBufferedReader(path, Charset.defaultCharset())) {
             while ((line = reader.readLine()) != null) {
@@ -51,12 +43,11 @@ public class DataSaveSorted {
         } catch (IOException e) {
             System.err.println("Erro: " + e);
         }
-        return trab;
     }
 
 
     public boolean salvaDadosArquivo(String nomeArquivo) {
-        String linha = "";
+        String linha;
         try {
             FileWriter fw = new FileWriter(nomeArquivo + "Alfa.csv");
             BufferedWriter bw = new BufferedWriter(fw);

@@ -7,21 +7,21 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="4f617" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+      <component id="4f617" class="javax.swing.JTextField" binding="nomeProjeto" default-binding="true">
         <constraints border-constraint="North"/>
         <properties>
           <text value=""/>
           <toolTipText value=""/>
         </properties>
       </component>
-      <scrollpane id="af927" binding="jScrollPane2">
+      <scrollpane id="af927" binding="painelScroll">
         <constraints border-constraint="Center"/>
         <properties>
           <horizontalScrollBarPolicy value="31"/>
         </properties>
         <border type="etched"/>
         <children>
-          <component id="2380d" class="javax.swing.JTable" binding="jTable1">
+          <component id="2380d" class="javax.swing.JTable" binding="tabela">
             <constraints/>
             <properties>
               <autoCreateRowSorter value="true"/>
